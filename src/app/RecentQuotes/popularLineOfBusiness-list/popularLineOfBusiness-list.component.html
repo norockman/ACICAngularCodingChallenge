@@ -1,0 +1,7 @@
+<h2>Two most popular lines of business all the time</h2>
+<div class="linesOfBusiness-menu">
+  <a *ngFor="let lineOfBusiness of linesOfBusiness" routerLink="/detail/{{lineOfBusiness.id}}">
+    {{lineOfBusiness.name}}
+  </a>
+</div>
+<app-recentQuotes-list [recentQuotesSummary]="recentQuotesSummary"></app-recentQuotes-list>

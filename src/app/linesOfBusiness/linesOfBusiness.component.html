@@ -8,7 +8,7 @@
   <input id="lineOfBusiness-description" #lineOfBusinessDescription />
 
   <!-- (click) passes input value to add() and then clears the input -->
-  <button class="add-button" (click)="add(lineOfBusinessName.value, lineOfBusinessDescription.value); lineOfBusinessName.value='';">
+  <button class="add-button" (click)="add(lineOfBusinessName.value, lineOfBusinessDescription.value); lineOfBusinessName.value='';lineOfBusinessDescription.value=''">
     Add New Line of Business
   </button>
 </div>
