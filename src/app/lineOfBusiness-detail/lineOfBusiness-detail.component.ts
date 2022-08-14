@@ -4,7 +4,6 @@ import { Location } from '@angular/common';
 
 import { LineOfBusiness } from '../LineOfBusiness';
 import { LineOfBusinessService } from '../lineOfBusiness.service';
-import { RecentQuoteSummary } from '../RecentQuote';
 import { RecentQuoteService } from '../recentquote.service';
 
 @Component({
@@ -27,7 +26,7 @@ export class LineOfBusinessDetailComponent implements OnInit {
   ngOnInit(): void {
     this.id = parseInt(this.route.snapshot.paramMap.get('id')!, 10);
     this.getLineOfBusiness();
-    this.getRecentQuotes();
+    this.countLineOfBusiness();
   }
 
   getLineOfBusiness(): void {
@@ -35,7 +34,7 @@ export class LineOfBusinessDetailComponent implements OnInit {
       .subscribe(lineOfBusiness => this.lineOfBusiness = lineOfBusiness);
   }
 
-  getRecentQuotes(): void {
+  countLineOfBusiness(): void {
     this.recentQuoteService.getRecentQuotesbyLineOfBusiness(this.id)
       .subscribe(recentQuotes => this.totalQuoteCount = recentQuotes.length)
   }

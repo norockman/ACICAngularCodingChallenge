@@ -4,8 +4,9 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\dashboard",
-    "\\src\\app\\lineOfBusiness-detail"
+    "\\src\\app\\lineOfBusiness-detail",
+    "\\src\\app\\linesOfBusiness"
   ],
-  "SelectedNode": "\\src\\app\\dashboard\\dashboard.component.ts",
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }
